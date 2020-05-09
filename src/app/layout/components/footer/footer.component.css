@@ -1,0 +1,80 @@
+footer {
+  width: 100%;
+  max-width: 100%;
+  background-color: #340570;
+  padding: 30px 0;
+  margin-top: 50px;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.newsletter {
+  width: 100%;
+  max-width: 100%;
+  padding: 15px 10px;
+}
+
+.newsletter-text {
+  padding-bottom: 15px;
+}
+
+.newsletter-text p {
+  font-size: 1.2em;
+  font-weight: 600;
+  line-height: 20px;
+  color: #fff;
+}
+
+.newsletter-input {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.newsletter-input input {
+  width: 350px;
+  max-width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  padding-left: 10px;
+  font-size: 1em;
+  transition: 0.8s;
+}
+
+.newsletter-input button {
+  height: 40px;
+  padding: 0 20px;
+  background-color: #8443D6;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 18px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter-input button:hover {
+  background-color: #502982;
+}
+
+.link-site {
+  font-size: 1.2em;
+}
+
+.link-site a {
+  color: #fff;
+}
+
+.info {
+  color: #fff;
+  font-size: 1.4em;
+}

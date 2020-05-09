@@ -1,0 +1,74 @@
+.banner {
+  height: 400px;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 45px;
+  background-image: url("/assets/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #540ead;
+  opacity: 0.1;
+}
+
+.banner-text {
+  z-index: 2;
+}
+
+.banner-text p {
+  font-size: 2.5em;
+  font-weight: 700;
+  line-height: 50px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.banner-link {
+  z-index: 2;
+}
+
+.banner-link a {
+  padding: 10px 40px;
+  background-color: #340570;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 600;
+  line-height: 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.banner-link a:hover {
+  background-color: #502982;
+}
+
+@media only screen and (max-width: 710px) {
+  .banner-text p {
+    font-size: 1.9em;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .banner-text p {
+    font-size: 1.6em;
+    line-height: 30px;
+    text-align: center;
+  }
+}

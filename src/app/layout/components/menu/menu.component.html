@@ -1,0 +1,43 @@
+<div class="top">
+  <header class="header">
+    <div class="container box-header">
+      <div class="box-logo">
+        <a routerLink="/" routerLinkActive="router-link-active">
+          <img src="assets/images/logo.png" alt="" />
+        </a>
+      </div>
+      <nav class="box-menu">
+        <ul class="menu">
+          <li><a routerLink="/">Home</a></li>
+          <li><a routerLink="/contato">Contato</a></li>
+          <li><a routerLink="/pedido">Fazer pedido</a></li>
+          <li>
+            <a routerLink="/perfil" class="perfil"
+              ><i class="fa fa-user-circle" aria-hidden="true"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="categories">
+    <div class="container box-categories">
+      <ul class="list-categories">
+        <li><a routerLink="#">Direito</a></li>
+        <li><a routerLink="#">Desenvolvimento web</a></li>
+        <li><a routerLink="#">Enem</a></li>
+        <li><a routerLink="#">História</a></li>
+        <li><a routerLink="#">Marketing</a></li>
+        <li><a routerLink="#">Moda</a></li>
+        <li><a routerLink="#">Inteligência artificial</a></li>
+        <li><a routerLink="#">Desenvolvimento pessoal</a></li>
+      </ul>
+      <!-- Fim da lista de categorias -->
+
+      <div class="box-search">
+        <app-search></app-search>
+        <!-- Componente de pesquisa de cursos -->
+      </div>
+    </div>
+  </div>
+</div>
