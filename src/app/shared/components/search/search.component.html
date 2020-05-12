@@ -1,6 +1,6 @@
 <div class="search">
   <form action="" autocomplete="off">
-    <input (blur)="clearSearch()" [(ngModel)]="word" (ngModelChange)="search()" type="search" id="search" name="search" placeholder="Buscar um Curso" />
+    <input  [ngClass]="{'on-focus-radius': focus}" (focus)="onFocus()" (blur)="onBlur()" [(ngModel)]="word" (ngModelChange)="search()" type="search" id="search" name="search" placeholder="Buscar um Curso" />
     <button class="btn-search" type="submit">
       <i class="fa fa-search" aria-hidden="true"></i>
     </button>

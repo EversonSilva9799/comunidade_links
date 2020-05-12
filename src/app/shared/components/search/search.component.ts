@@ -12,6 +12,7 @@ export class SearchComponent implements OnInit {
 
   public posts: Post[] = [];
   public word: string;
+  public focus = false;
 
   constructor(private searchService: SearchService) { }
 
@@ -29,11 +30,15 @@ export class SearchComponent implements OnInit {
     }
   }
 
-  public clearSearch() {
-    if (this.word.length < 0) {
+  public onBlur() {
+    this.focus = false;
+    if (this.word?.length < 0) {
       this.posts = [];
     }
+  }
 
+  public onFocus() {
+      this.focus = true;
   }
 
 }

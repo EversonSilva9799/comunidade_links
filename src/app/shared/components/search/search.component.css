@@ -18,6 +18,10 @@
   font-weight: 300;
 }
 
+.on-focus-radius {
+  border-radius: 5px 0px 0px 0px  !important;
+}
+
 .search input::placeholder {
   color: rgba(25, 25, 25, 0.5);
 }
@@ -62,6 +66,5 @@
   }
   .search button {
     display: none;
-
   }
 }
