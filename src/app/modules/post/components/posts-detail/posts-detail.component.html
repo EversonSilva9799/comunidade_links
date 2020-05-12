@@ -2,10 +2,10 @@
   <section class="post-presentation container">
     <div class="box-post">
       <div class="box-image">
-        <img src="{{ post.image }}" alt="{{ post.name }}" />
+        <img src="{{ apiService.url }}/images/{{post.image}}" alt="{{ post.title }}" />
       </div>
       <div class="box-info-post">
-        <h1 class="post-name">{{ post.name }}</h1>
+        <h1 class="post-name">{{ post.title }}</h1>
         <p class="post-view">Visualizações(70)</p>
         <p class="post-like">Gostei(150)</p>
       </div>
@@ -26,46 +26,12 @@
   <section class="container">
     <h2 class="link-title">Links para Download:</h2>
     <div class="links">
-      <p class="link-text">
+      <p class="link-text" *ngFor="let link of post.links; let i = index">
         Download parte (1):
-        <a href="{{ post.link }}" target="_blank">{{ post.link }}</a>
-      </p>
-      <p class="link-text">
-        Download parte (2):
-        <a href="{{ post.link }}" target="_blank">{{ post.link }}</a>
-      </p>
-      <p class="link-text">
-        Download parte (3):
-        <a href="{{ post.link }}" target="_blank">{{ post.link }}</a>
-      </p>
-      <p class="link-text">
-        Download parte (4):
-        <a href="{{ post.link }}" target="_blank">{{ post.link }}</a>
+        <a href="{{ link.originalLink }}" target="_blank">{{ link.originalLink  }}</a>
       </p>
     </div>
   </section>
 </div>
 
-<div class="back">
-  <section class="container">
-    <h2 class="link-title">Links para Download:</h2>
-    <div class="links">
-      <p class="link-text">
-        Download parte (1):
-        <a href="{{ post.link }}" target="_blank">{{ post.link }}</a>
-      </p>
-      <p class="link-text">
-        Download parte (2):
-        <a href="{{ post.link }}" target="_blank">{{ post.link }}</a>
-      </p>
-      <p class="link-text">
-        Download parte (3):
-        <a href="{{ post.link }}" target="_blank">{{ post.link }}</a>
-      </p>
-      <p class="link-text">
-        Download parte (4):
-        <a href="{{ post.link }}" target="_blank">{{ post.link }}</a>
-      </p>
-    </div>
-  </section>
-</div>
+
