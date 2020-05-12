@@ -65,6 +65,28 @@
   overflow-x: auto;
 }
 
+.list-categories::-webkit-scrollbar {
+  height: 8px !important;
+}
+
+.list-categories::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(167, 167, 167);
+  border-radius: 5px;
+}
+
+/* Handle */
+
+.list-categories::-webkit-scrollbar-thumb {
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+
+.list-categories::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+
 .box-categories .list-categories li {
   padding-right: 25px;
 }
@@ -92,5 +114,8 @@
   .box-header {
     padding-top: 5px;
     flex-direction: column;
+  }
+  .list-categories::-webkit-scrollbar {
+    height: 5px !important;
   }
 }
