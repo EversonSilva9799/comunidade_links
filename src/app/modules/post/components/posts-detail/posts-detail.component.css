@@ -4,7 +4,7 @@
 }
 
 .light {
-  padding: 50px 0;
+  padding: 50px 5px;
 }
 
 .post-presentation {
@@ -42,7 +42,7 @@
   font-weight: 700;
 }
 
-.post-view, .post-like {
+.post-view {
   font-size: 0.875em;
   color: rgb(31, 31, 31);
 }
@@ -107,4 +107,24 @@
 
 .link-title a {
   color: rgb(20, 2, 121);
+}
+
+@media only screen and (max-width: 420px) {
+  .post-presentation {
+    flex-direction: column;
+  }
+  .box-post {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  .box-image {
+    width: 100%;
+    height: 210px;
+  }
+  .post-name {
+    font-size: 1.475em;
+  }
+  .link-title {
+    font-size: 1.275em;
+  }
 }
