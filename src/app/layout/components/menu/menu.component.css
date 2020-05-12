@@ -1,10 +1,8 @@
 .top {
   border-bottom: 1px solid rgba(17, 17, 17, 0.2);
-  /* padding-bottom: 50px; */
 }
 
 .header {
-  /* border-bottom: 1px solid rgba(17,17,17,0.2); */
   background-color: #fff;
 }
 
@@ -18,13 +16,6 @@
 .box-logo {
   margin: 0 10px;
 }
-
-/* .box-logo a {
-  font-size: 1.6em;
-  font-weight: 900;
-  line-height: 22px;
-  color: #540EAD;
-} */
 
 .box-menu {
   margin: 0 10px;
@@ -91,7 +82,15 @@
 }
 
 .box-search {
+  max-width: 100%;
+  padding: 10px 0;
   order: 1;
-  margin: 0 10px;
   margin-bottom: 8px;
+}
+
+@media only screen and (max-width: 420px) {
+  .box-header {
+    padding-top: 5px;
+    flex-direction: column;
+  }
 }
