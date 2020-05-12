@@ -1,8 +1,13 @@
 <div class="search">
-  <form action="">
-    <input type="search" id="search" placeholder="Buscar um Curso" />
+  <form action="" autocomplete="off">
+    <input (blur)="clearSearch()" [(ngModel)]="word" (ngModelChange)="search()" type="search" id="search" name="search" placeholder="Buscar um Curso" />
     <button class="btn-search" type="submit">
       <i class="fa fa-search" aria-hidden="true"></i>
     </button>
   </form>
+  <section *ngIf="posts.length > 0" class="result">
+    <p class="post-title" *ngFor="let post of posts">
+      <a (click)="posts = []" class="post-link" routerLink="/posts/{{post.link}}">{{ post.title }}</a>
+    </p>
+  </section>
 </div>

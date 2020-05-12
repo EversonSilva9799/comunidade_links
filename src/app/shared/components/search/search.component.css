@@ -35,3 +35,19 @@
 .search button:hover {
   background-color: #502982;
 }
+
+.search .result {
+  width: 350px;
+  max-width: 100%;
+  padding: 30px 15px 15px 10px;
+  background-color: #fff;
+}
+
+.result .post-title {
+  margin-bottom: 10px;
+}
+
+.result .post-link {
+  padding: 10px 0px;
+  color: rgba(70,70,70,0.8);
+}
