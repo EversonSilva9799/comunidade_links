@@ -43,15 +43,17 @@
   z-index: 2;
 }
 
-.banner-link a {
+.banner-link .button-banner {
   padding: 10px 40px;
   background-color: #340570;
   color: #fff;
+  border: none;
   font-size: 1.2em;
   font-weight: 600;
   line-height: 20px;
   border-radius: 5px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .banner-link a:hover {
