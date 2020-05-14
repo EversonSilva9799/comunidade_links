@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import Post  from '../../../data/models/Post';
+import Post from '../../../data/models/Post';
 import { SearchService } from 'src/app/data/services/search.service';
 import Response from 'src/app/data/models/Response';
 
@@ -20,19 +20,18 @@ export class SearchComponent implements OnInit {
   }
 
   public search() {
-    if (this.word.length > 0) {
-      this.searchService.get(this.word).subscribe((response: Response) => {
+    if (this.word.trim().length > 0 ) {
+      this.searchService.get(this.word.trim()).subscribe((response: Response) => {
         this.posts = response.data.docs;
       });
-    }
-    else {
+    } else {
       this.posts = [];
     }
   }
 
   public onBlur() {
     this.focus = false;
-    if (this.word?.length < 0) {
+    if (this.word?.length === 0) {
       this.posts = [];
     }
   }
