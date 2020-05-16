@@ -1,0 +1,21 @@
+<div class="box-background">
+  <div class="box-login">
+    <h1 class="title">Fazer Login</h1>
+
+    <form [formGroup]="form" (ngSubmit)="handlerLogin()" class="form-login">
+      <div class="box-input">
+        <input formControlName="email" type="email" placeholder="Digite seu email">
+      </div>
+      <div class="box-input">
+        <input formControlName="password" type="password" placeholder="Digite sua senha">
+      </div>
+      <button  class="btn-login">Login</button>
+    </form>
+    <div class="box-recuperar">
+      <p class="text-recuperar">
+        <a routerLink="/dashboard/esqueceu-senha">Recuperar senha</a>
+      </p>
+    </div>
+  </div>
+</div>
+
