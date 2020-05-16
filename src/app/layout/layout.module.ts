@@ -4,11 +4,11 @@ import { MenuComponent } from './components/menu/menu.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { RouterModule } from '@angular/router';
-import { SearchComponent } from '../shared/components/search/search.component';
 import { SharedModule } from '../shared/shared.module';
+import { LayoutDashboardComponent } from './components/layout-dashboard/layout-dashboard.component';
 
 @NgModule({
-	declarations: [ MenuComponent, FooterComponent, LayoutComponent ],
+	declarations: [ MenuComponent, FooterComponent, LayoutComponent, LayoutDashboardComponent ],
 	imports: [ CommonModule, RouterModule, SharedModule ]
 })
 export class LayoutModule {}
