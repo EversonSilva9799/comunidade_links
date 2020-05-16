@@ -13,9 +13,10 @@
   scroll-behavior: smooth;
 }
 
-body {
+body, html {
   background-color: #fafafa;
   font-family: 'Nunito Sans', sans-serif;
+  height: 100%;
 }
 
 a {
